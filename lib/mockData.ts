@@ -26,6 +26,8 @@ export type ProjectDetail = {
   id: string;
   name: string;
   errorTrend: number[];
+  apiKey: string; 
+
 };
 
 export const mockOverviewStats: OverviewStats = {
@@ -79,10 +81,13 @@ export const mockProjectDetails: ProjectDetail[] = [
     id: "demo-news-site",
     name: "Demo News Site",
     errorTrend: [12, 19, 7, 22, 30, 18, 9],
+    apiKey: 'fx_test_demo_news_site_123',
+
   },
   {
     id: "checkout-v2",
     name: "Checkout v2",
     errorTrend: [3, 6, 4, 5, 7, 9, 4],
+    apiKey: 'fx_test_checkout_v2_456',
   },
 ];

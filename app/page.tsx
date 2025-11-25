@@ -34,18 +34,19 @@ export default function LandingPage() {
     <main className="min-h-screen bg-slate-950 text-slate-50">
       <div className="mx-auto flex min-h-screen max-w-5xl flex-col px-4 py-8">
         {/* Top nav */}
-        <header className="mb-8 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-xl bg-emerald-500/20 ring-1 ring-emerald-400/40" />
-            <div className="flex flex-col">
-              <span className="text-sm font-semibold tracking-tight">
-                FlowCanary
-              </span>
-              <span className="text-[11px] uppercase tracking-[0.16em] text-slate-500">
-                Frontend flow monitoring
-              </span>
-            </div>
-          </div>
+
+<header className="mb-8 flex items-center justify-between">
+  <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition">
+    <div className="h-8 w-8 rounded-xl bg-emerald-500/20 ring-1 ring-emerald-400/40" />
+    <div className="flex flex-col">
+      <span className="text-sm font-semibold tracking-tight">
+        FlowCanary
+      </span>
+      <span className="text-[11px] uppercase tracking-[0.16em] text-slate-500">
+        Frontend flow monitoring
+      </span>
+    </div>
+  </Link>
 
           <div className="flex items-center gap-3 text-xs">
             <Link
